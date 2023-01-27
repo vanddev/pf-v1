@@ -9,7 +9,7 @@ $accent-color: #ffc86b;
 $logo-height: 6rem;
 
 // Import Pico
-@import "@picocss/pico/scss/pico";
+@import "node_modules/@picocss/pico/scss/pico";
 
 
 body > header {
