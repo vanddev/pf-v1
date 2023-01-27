@@ -1,0 +1,72 @@
+/* Custom Blue-grey version */
+
+// Override default variables
+$primary-500: #607d8b;
+$primary-600: #eeeeee;
+$primary-700: #455a64;
+
+$accent-color: #ffc86b;
+$logo-height: 6rem;
+
+// Import Pico
+@import "@picocss/pico/scss/pico";
+
+
+body > header {
+    display: flex;
+    justify-content: center;
+    
+    img {
+        max-height: $logo-height;
+        position: absolute;
+        left: 8rem;
+    }
+
+    .links-wrap {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        padding: 0;
+        list-style: none;
+        height: $logo-height;
+        
+        a {
+            padding: 0 1.5em;
+        }
+    }
+}
+    
+main.container {
+    padding-top: 0px;
+}
+
+.hero {
+    strong {
+        font-weight: 400;
+        color: $accent-color;
+    }
+
+    h1, h2, h3, h4{
+        font-weight: 100;
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    h3 {
+        font-size: 70px;
+    }
+
+    h4 {
+        font-size: 40px;
+    }
+
+    p {
+        margin-top: 20px;
+        line-height: 26px;
+    }
+}
