@@ -4,7 +4,7 @@
 $primary-500: #607d8b;
 $primary-600: #eeeeee;
 $primary-700: #455a64;
-
+$bg-color: #11191f;
 $accent-color: #ffc86b;
 $logo-height: 6rem;
 
@@ -15,6 +15,9 @@ $logo-height: 6rem;
 body > header {
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 2;
+    background-color: $bg-color;
     
     img {
         max-height: $logo-height;
@@ -32,6 +35,11 @@ body > header {
         
         a {
             padding: 0 1.5em;
+        }
+
+        a:hover {
+            color: $accent-color;
+            text-decoration: none;
         }
     }
 }
@@ -68,5 +76,31 @@ main.container {
     p {
         margin-top: 20px;
         line-height: 26px;
+    }
+}
+
+.bottom-left {
+    position: fixed;
+    bottom: 0;
+    left: 10rem;
+
+    ul {
+
+        li {
+            list-style: none;
+
+            a:hover {
+                color: $accent-color;
+            }
+        }
+    }
+
+    ul::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0px auto;
+        background-color: white;
     }
 }
