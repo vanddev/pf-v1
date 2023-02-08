@@ -1,0 +1,139 @@
+/* Custom Blue-grey version */
+
+// Override default variables
+$primary-500: #607d8b;
+$primary-600: #eeeeee;
+$primary-700: #455a64;
+$grey: #1B2832;
+$bg-color: #11191f;
+$accent-color: #ffc86b;
+$logo-height: 6rem;
+
+// Import Pico
+@import "node_modules/@picocss/pico/scss/pico";
+// @import "node_modules/bulma/bulma.sass";
+// @import "mobile.scss";
+
+
+body {
+    background-color: $bg-color;
+}
+
+body > header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    background-color: $bg-color;
+    max-height: 30vh;
+    
+    img {
+        max-height: $logo-height;
+        position: absolute;
+        left: 8rem;
+    }
+
+    .links-wrap {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        padding: 0;
+        list-style: none;
+        height: $logo-height;
+        
+        a {
+            padding: 0 1.5em;
+        }
+
+        a:hover {
+            color: $accent-color;
+            text-decoration: none;
+        }
+    }
+}
+    
+main.container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+section.hero {
+    margin-bottom: 0px;
+    height: 70vh;
+
+    strong {
+        font-weight: 400;
+        color: $accent-color;
+    }
+
+    h1, h2, h3, h4{
+        font-weight: 100;
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    h3 {
+        font-size: 70px;
+    }
+
+    h4 {
+        font-size: 40px;
+    }
+
+    p {
+        margin-top: 20px;
+        line-height: 26px;
+    }
+}
+
+.bottom-left {
+    position: fixed;
+    bottom: 0;
+    left: 10rem;
+
+    ul {
+        margin-bottom: 0;
+
+        li {
+            list-style: none;
+
+            a:hover {
+                color: $accent-color;
+            }
+        }
+    }
+
+    ul::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0px auto;
+        background-color: white;
+    }
+}
+
+.skills {
+    .skill {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        // background-color: $grey-900;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        border-radius: 20px 20px 20px 20px;
+        min-height: 100px;
+        padding: 12px 0 12px 0;
+
+        img {
+            max-height: 100px;
+            margin-bottom: 10px;
+        }
+    }
+}

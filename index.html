@@ -2,47 +2,45 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <title>Hello, world!</title>
+    <link rel="stylesheet" href="index.css">
+    <title>Hello, world BULMA!</title>
   </head>
+
   <body>
-    <header>
-      <div class="portifolios-header">
-        <img alt="Vand's Brand" src="assets/brand-transparent.png">
-        <div class="links-wrap">
-          <a href="#">About</a>
-          <a href="#">Portfolio</a>
-          <a href="#">Contact</a>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="assets/brand-transparent.png" alt="Vand's Brand">
+          </a>
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
-      </div>
-    </header>
-    <main class="container">
-      <div class="grid">
-        <div class="hero">
-          <h1>Hi, I'm</h1>
-          <h2><strong>Vanderson Alves</strong></h2>
-          <h3> also known as <strong>Vand</strong></h3>
-          <h4>I make tech ideas become real</h4>
-          <p>I'm a backend software engineer specializing in building solutions with high scalability. Currently, I'm focused on building scalable and secure applications on the cloud.</p>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a href="#" class="navbar-item">About</a>
+            <a href="#" class="navbar-item">Portfolio</a>
+            <a href="#" class="navbar-item">Contact</a>
+          </div>
+      
+          <!-- <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div> -->
         </div>
-        <div class="bottom-left">
-          <ul>
-            <li>
-              <a data-tooltip="Github" data-placement="right"><i class="lab la-github" style="font-size: 40px;"></i></a>
-            </li>
-            <li>
-              <a data-tooltip="Linkedin" data-placement="right"><i class="lab la-linkedin-in" style="font-size: 40px;"></i></a>
-            </li>
-            <li>
-              <a data-tooltip="Stackoverflow" data-placement="right"><i class="lab la-stack-overflow" style="font-size: 40px;"></i></a>
-            </li>
-            <li>
-              <a data-tooltip="Medium" data-placement="right"><i class="lab la-medium" style="font-size: 40px;"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </main>
+      </nav>
   </body>
 </html>

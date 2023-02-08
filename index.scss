@@ -1,106 +1,51 @@
-/* Custom Blue-grey version */
-
-// Override default variables
-$primary-500: #607d8b;
-$primary-600: #eeeeee;
-$primary-700: #455a64;
 $bg-color: #11191f;
+$navbar-background-color: $bg-color;
+$navbar-item-img-max-height: 120px;
 $accent-color: #ffc86b;
-$logo-height: 6rem;
+$primary-color: #eeeeee;
+$navbar-item-font-size: 20px;
+$font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
+"Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+"Segoe UI Symbol", "Noto Color Emoji";
+$content-padding: 70px;
 
-// Import Pico
-@import "node_modules/@picocss/pico/scss/pico";
+@import "node_modules/bulma/bulma.sass";
 
-
-body > header {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    z-index: 2;
+body {
+    font-family: $font-family;
     background-color: $bg-color;
-    
-    img {
-        max-height: $logo-height;
-        position: absolute;
-        left: 8rem;
-    }
-
-    .links-wrap {
-        display: flex;
-        align-items: center;
-        margin-bottom: 0;
-        padding: 0;
-        list-style: none;
-        height: $logo-height;
-        
-        a {
-            padding: 0 1.5em;
-        }
-
-        a:hover {
-            color: $accent-color;
-            text-decoration: none;
-        }
-    }
-}
-    
-main.container {
-    padding-top: 0px;
 }
 
-.hero {
-    strong {
-        font-weight: 400;
-        color: $accent-color;
-    }
+.navbar {
+    padding: $content-padding;
 
-    h1, h2, h3, h4{
-        font-weight: 100;
+    .navbar-brand {
+        width: 0%;
+    }
+    .navbar-start {
         margin: 0;
-        font-size: 1rem;
-    }
+        justify-content: center;
+        align-items: center;
+        width: 100%;
 
-    h2 {
-        font-size: 70px;
-        line-height: 70px;
-    }
-
-    h3 {
-        font-size: 70px;
-    }
-
-    h4 {
-        font-size: 40px;
-    }
-
-    p {
-        margin-top: 20px;
-        line-height: 26px;
-    }
-}
-
-.bottom-left {
-    position: fixed;
-    bottom: 0;
-    left: 10rem;
-
-    ul {
-
-        li {
-            list-style: none;
-
-            a:hover {
+        .navbar-item {
+            background-color: transparent;
+            color: $primary-color;
+            padding: 0 30px 0 30px;
+            font-size: 20px;
+            &:hover {
                 color: $accent-color;
             }
         }
     }
+}
 
-    ul::after {
-        content: "";
-        display: block;
-        width: 1px;
-        height: 90px;
-        margin: 0px auto;
-        background-color: white;
+@media screen and (max-width: 1024px) {
+    .navbar {
+        padding: 0px;
+
+        .navbar-brand {
+            width: 100%;
+        }
     }
 }
