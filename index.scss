@@ -12,6 +12,7 @@ $content-padding: 70px;
 @import "node_modules/bulma/bulma.sass";
 
 body {
+    color: $primary-color;
     font-family: $font-family;
     background-color: $bg-color;
 }
@@ -37,6 +38,113 @@ body {
                 color: $accent-color;
             }
         }
+    }
+}
+
+.container {
+    // background-color: grey;
+}
+
+section.main-hero {
+    // background-color: red;
+    color: $primary-color;
+    margin-bottom: 0px;
+    height: 70vh;
+
+    strong {
+        font-weight: 400;
+        color: $accent-color;
+    }
+
+    h1, h2, h3, h4{
+        font-weight: 100;
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 70px;
+        line-height: 70px;
+    }
+
+    h3 {
+        font-size: 70px;
+    }
+
+    h4 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-top: 20px;
+        line-height: 26px;
+        color: $grey-light;
+    }
+}
+
+.bottom-left {
+    position: fixed;
+    bottom: 0;
+    left: 10rem;
+
+    ul {
+        margin-bottom: 0;
+
+        li {
+            list-style: none;
+            
+            a {
+                color: $primary-color;
+
+                &:hover {
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+
+    ul::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 90px;
+        margin: 0px auto;
+        background-color: white;
+    }
+}
+
+.skills {
+    padding: 0 232px 0 232px;
+    .skill-card {
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #293035;
+        border-radius: 30px;
+        width: 200px;
+        margin: auto;
+
+        img {
+            height: 90px;
+        }
+
+        .skill-title {
+            margin-top: 20px;
+            color: $primary-color;
+        }
+    }
+}
+
+.columns {
+    .column.is-offset-1_5 {
+        margin-left: 12.5%;
     }
 }
 
