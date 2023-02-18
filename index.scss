@@ -11,10 +11,20 @@ $content-padding: 70px;
 
 @import "node_modules/bulma/bulma.sass";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: $primary-color;
     font-family: $font-family;
     background-color: $bg-color;
+}
+
+.columns {
+    .column.is-offset-1_5 {
+        margin-left: 12.5%;
+    }
 }
 
 .navbar {
@@ -41,15 +51,19 @@ body {
     }
 }
 
-.container {
-    // background-color: grey;
+section {
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
 
-section.main-hero {
+#main-hero {
     // background-color: red;
     color: $primary-color;
     margin-bottom: 0px;
-    height: 70vh;
+    min-height: 70vh;
 
     strong {
         font-weight: 400;
@@ -64,6 +78,7 @@ section.main-hero {
 
     h1 {
         font-size: 20px;
+        text-align: left;
     }
 
     h2 {
@@ -82,7 +97,7 @@ section.main-hero {
     p {
         font-size: 20px;
         margin-top: 20px;
-        line-height: 26px;
+        // line-height: 26px;
         color: $grey-light;
     }
 }
@@ -118,35 +133,106 @@ section.main-hero {
     }
 }
 
-.skills {
-    padding: 0 232px 0 232px;
+#about {
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+#skills {
+    padding: 0 256px 0 256px;
+    margin-top: 20px;
+    // min-height: 100vh;
+
     .skill-card {
-        padding: 22px;
+        padding: 16px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         background-color: #293035;
         border-radius: 30px;
-        width: 200px;
+        // width: 200px;
         margin: auto;
 
         img {
-            height: 90px;
+            height: 50px;
         }
 
         .skill-title {
-            margin-top: 20px;
+            margin-top: 12px;
             color: $primary-color;
         }
     }
 }
 
-.columns {
-    .column.is-offset-1_5 {
-        margin-left: 12.5%;
+
+#timeline {
+    padding: 100px 15px;
+
+    .timeline-items{
+        max-width: 1000px;
+        margin:auto;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .timeline-items::before{
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 100%;
+        background-color: #2f363e;
+        left: calc(50% - 1px);
+    }
+    .timeline-item{
+        margin-bottom: 40px;
+        width: 100%;
+        position: relative;
+    }
+    .timeline-item:last-child{
+        margin-bottom: 0;
+    }
+    .timeline-item:nth-child(odd){
+        padding-right: calc(50% + 30px);
+        text-align: right;
+    }
+    .timeline-item:nth-child(even){
+        padding-left: calc(50% + 30px);
+    }
+    .timeline-dot{
+        height: 16px;
+        width: 16px;
+        background-color: #eaa023;
+        position: absolute;
+        left: calc(50% - 8px);
+        border-radius: 50%;
+        top:10px;
+    }
+    .timeline-date{
+        font-size: 18px;
+        color: #eaa023;
+        margin:6px 0 15px;
+    }
+    .timeline-content{
+        background-color: #2f363e;
+        padding: 30px;
+        border-radius: 5px;
+    }
+    .timeline-content h3{
+        font-size: 20px;
+        color: #ffffff;
+        margin:0 0 10px;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+    .timeline-content p{
+        color: #c8c8c8;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 22px;
     }
 }
+
 
 @media screen and (max-width: 1024px) {
     .navbar {
@@ -155,5 +241,20 @@ section.main-hero {
         .navbar-brand {
             width: 100%;
         }
+    }
+
+    .timeline-items::before{
+        left: 7px;
+    }
+    .timeline-item:nth-child(odd){
+        padding-right: 0;
+        text-align: left;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even){
+        padding-left: 37px;
+    }
+    .timeline-dot{
+        left:0;
     }
 }
