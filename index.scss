@@ -27,6 +27,11 @@ body {
     }
 }
 
+
+.button.is-info.is-outlined:hover {
+    background-color: hsl(207deg, 61%, 20%);
+}
+
 .navbar {
     padding: $content-padding;
 
@@ -49,7 +54,19 @@ body {
             }
         }
     }
+
+    .navbar-end {
+        .navbar-item {
+            background-color: transparent;
+            color: $primary-color;
+            font-size: 20px;
+            &:hover {
+                color: $accent-color;
+            }
+        }
+    }
 }
+
 
 section {
     h1 {
@@ -65,15 +82,15 @@ section {
     margin-bottom: 0px;
     min-height: 70vh;
 
-    strong {
-        font-weight: 400;
-        color: $accent-color;
-    }
-
-    h1, h2, h3, h4{
+    h1, h2, h3, .catchphrase{
         font-weight: 100;
         margin: 0;
         font-size: 1rem;
+
+        strong {
+            font-weight: 400;
+            color: $accent-color;    
+        }
     }
 
     h1 {
@@ -90,7 +107,7 @@ section {
         font-size: 70px;
     }
 
-    h4 {
+    .catchphrase {
         font-size: 40px;
     }
 
@@ -99,10 +116,15 @@ section {
         margin-top: 20px;
         // line-height: 26px;
         color: $grey-light;
+        max-width: 80%;
+    }
+
+    .button {
+        margin-top: 2rem;
     }
 }
 
-.bottom-left {
+.social-links {
     position: fixed;
     bottom: 0;
     left: 10rem;
