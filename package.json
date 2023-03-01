@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "build": "sass --no-source-map .\\index.scss .\\index.css" 
+    "build": "npm install && npm install -g sass && sass --no-source-map .\\index.scss .\\index.css"
   },
   "repository": {
     "type": "git",
