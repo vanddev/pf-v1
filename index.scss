@@ -156,7 +156,6 @@ section {
 }
 
 #about {
-    min-height: 100vh;
     padding-top: 20px;
 
     img {
@@ -166,7 +165,7 @@ section {
 
 #skills {
     padding: 0 256px 0 256px;
-    margin-top: 20px;
+    margin-top: 80px;
     // min-height: 100vh;
 
     .skill-card {
@@ -295,6 +294,16 @@ section {
     }
 }
 
+@media screen and (max-width: 1216px) {
+    .navbar-item img {
+        height: 70px;
+    }
+
+    .navbar .navbar-start .navbar-item {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 1160px) {
     .social-links {
         display: none;
@@ -325,6 +334,14 @@ section {
         }
         .timeline-dot{
             left:0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .columns {
+        .column.is-offset-1_5 {
+            margin-left: 0;
         }
     }
 }
