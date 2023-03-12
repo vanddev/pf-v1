@@ -8,6 +8,7 @@ $font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
 "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
 "Segoe UI Symbol", "Noto Color Emoji";
 $content-padding: 70px;
+$hero-padding: max($content-padding, 10vw);
 
 @import "node_modules/bulma/bulma.sass";
 
@@ -19,6 +20,10 @@ body {
     color: $primary-color;
     font-family: $font-family;
     background-color: $bg-color;
+}
+
+body > header {
+    min-height: 30vh;
 }
 
 .columns {
@@ -64,6 +69,10 @@ body {
                 color: $accent-color;
             }
         }
+    }
+
+    .navbar-burger span {
+        color: $primary-color;
     }
 }
 
@@ -291,6 +300,10 @@ section {
 @media screen and (max-width: 1680px) {
     .social-links {
         left: 2rem;
+    }
+
+    #main-hero {
+        padding-left: $hero-padding;
     }
 }
 
