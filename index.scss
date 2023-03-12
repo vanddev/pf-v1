@@ -381,6 +381,16 @@ section {
             left:0;
         }
     }
+
+    #skills {
+        .skill-card {
+            padding: 12px;
+            border-radius: 12px;
+            img {
+                height: 30px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
