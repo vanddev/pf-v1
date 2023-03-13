@@ -400,3 +400,25 @@ section {
         }
     }
 }
+
+@media screen and (max-width: 770px) {
+    #about {
+        .profile-desc {
+            padding: 0 200px;
+            margin-bottom: 20px;
+        }
+
+        .profile-photo{
+            margin-right: 0;
+             img {
+                max-width: 300px;
+                margin: auto;
+                display: block;
+            }
+        }   
+    }
+
+    #skills {
+        padding: 0 30px;
+    }
+}
