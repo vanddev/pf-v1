@@ -10,6 +10,10 @@ $font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
 $content-padding: 70px;
 $hero-padding: max($content-padding, 10vw);
 
+
+$hero-font-size: 70px;
+$hero-font-size-medium: 50px;
+
 @import "node_modules/bulma/bulma.sass";
 
 html {
@@ -136,20 +140,21 @@ section {
     }
 
     h2 {
-        font-size: 70px;
-        line-height: 70px;
+        font-size: $hero-font-size;
+        line-height: $hero-font-size;
     }
 
     h3 {
-        font-size: 70px;
+        font-size: $hero-font-size;
     }
 
     .catchphrase {
-        font-size: 40px;
+        font-size: calc($hero-font-size * 0.6);
     }
 
     p {
-        font-size: 20px;
+        // font-size: 20px;
+        font-size: calc($hero-font-size * 0.3);
         margin-top: 20px;
         // line-height: 26px;
         color: $grey-light;
@@ -420,5 +425,27 @@ section {
 
     #skills {
         padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    #main-hero {
+        h2 {
+            font-size: $hero-font-size-medium;
+            line-height: $hero-font-size-medium;
+        }
+
+        h3 {
+            font-size: $hero-font-size-medium;
+        }
+
+        .catchphrase {
+            font-size: calc($hero-font-size-medium * 0.6);
+        }
+
+        p {
+            max-width: 100%;
+            font-size: calc($hero-font-size-medium * 0.3);
+        }
     }
 }
