@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="assets/favicon.png" type="image/png">
     <title>Vand Alves</title>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body>
@@ -25,7 +28,7 @@
             </a>
           </div>
         
-          <div id="navMenu" class="navbar-menu">
+          <div id="navMenu" class="navbar-menu animate__animated">
             <div class="navbar-start">
               <a href="#about" class="navbar-item">About</a>
               <a href="#skills" class="navbar-item">Skills</a>
@@ -68,7 +71,7 @@
           </a>
         </div>
       </section>
-      <section id="about">
+      <section id="about" data-aos="fade-up">
         <h1>About Me</h1>
         <div class="columns">
           <div class="column is-offset-1 profile-desc">
@@ -81,7 +84,7 @@
           </div>
         </div>
       </section>
-      <section id="skills">
+      <section id="skills" data-aos="fade-up">
         <h1>My Skills</h1>
         <div class="columns is-mobile">
           <div class="column is-3">
@@ -182,7 +185,7 @@
           </div>
         </div>
       </section>
-      <section id="timeline">
+      <section id="timeline" data-aos="fade-up">
         <h1>Experience</h1>
         <div class="timeline-items">
           <div class="timeline-item">
@@ -230,7 +233,7 @@
           </div>
         </div>
       </section>
-      <section id="contact">
+      <section id="contact" data-aos="fade-up">
         <h1>Say a hello</h1>
         <p>I'm always open to exploring new opportunities, so feel free to reach out if you have something in mind. Additionally, if you just want to connect or have a question, don't hesitate to message me. I'll do my best to get back to you as soon as possible.</p>
         <div class="buttons">
@@ -267,7 +270,11 @@
       });
     </script>
     <script>
+      AOS.init({once: true});
+    </script>
+    <script>
       const navbarItems = []
+      const navbarBurger = {}
       const mainContent = document.getElementsByTagName('main')[0]
       const htmlDocument = document.getElementsByTagName('html')[0]
 
@@ -275,7 +282,16 @@
         return document.querySelector(".navbar-burger").computedStyleMap().get("display") != 'none'
       }
 
+      const isNavBurgerActive = () => {
+        return document.querySelector(".navbar-burger").classList.contains("is-active")
+      }
+
+      const animateNavMenu = () => {
+        document.getElementById("navMenu").classList.toggle("animate__slideInRight") 
+      }
+
       const toggleMenu = () => {
+        animateNavMenu();
         navbarItems.forEach(element => {
           element.classList.toggle('is-active');
         });
@@ -316,7 +332,7 @@
         window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
         window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
         window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
-        window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+        window.addEventListener('keydown', preventDefaultScrollKeys, false);
       }
 
       // call this to Enable
@@ -324,7 +340,7 @@
         window.removeEventListener('DOMMouseScroll', preventDefault, false);
         window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
         window.removeEventListener('touchmove', preventDefault, wheelOpt);
-        window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+        window.removeEventListener('keydown', preventDefaultScrollKeys, false);
       }
 
       document.addEventListener('DOMContentLoaded', () => {
