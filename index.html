@@ -230,7 +230,35 @@
           </div>
         </div>
       </section>
+      <section id="contact">
+        <h1>Say a hello</h1>
+        <p>I'm always open to exploring new opportunities, so feel free to reach out if you have something in mind. Additionally, if you just want to connect or have a question, don't hesitate to message me. I'll do my best to get back to you as soon as possible.</p>
+        <div class="buttons">
+          <a class="button is-info is-outlined" rel="noopener noreferrer" target="_blank" href="mailto:vanalvesdev@gmail.com">
+            <strong>Send me a message</strong>
+          </a>
+        </div>
+      </section>
     </main>
+    <footer>
+      <div class="links">
+        <ul>
+          <li>
+            <a data-tooltip="Github" data-placement="right" target="_blank" href="https://github.com/vanalvesdev"><i class="lab la-github"></i></a>
+          </li>
+          <li>
+            <a data-tooltip="Linkedin" data-placement="right" target="_blank" href="https://www.linkedin.com/in/vaanalvesr/?locale=en_US"><i class="lab la-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a data-tooltip="Stackoverflow" data-placement="right" target="_blank" href="https://stackoverflow.com/users/8420463/vanderson-alves"><i class="lab la-stack-overflow"></i></a>
+          </li>
+          <li>
+            <a data-tooltip="Medium" data-placement="right" target="_blank" href="https://medium.com/@vaanalvesdev"><i class="lab la-medium"></i></a>
+          </li>
+        </ul>
+      </div>
+      <span>Built by Vand Alves</span>
+    </footer>
     <script>
       var typed = new Typed('#typed', {
         stringsElement: '#typed-strings',
@@ -242,6 +270,10 @@
       const navbarItems = []
       const mainContent = document.getElementsByTagName('main')[0]
       const htmlDocument = document.getElementsByTagName('html')[0]
+
+      const isMenuVisible = () => {
+        return document.querySelector(".navbar-burger").computedStyleMap().get("display") != 'none'
+      }
 
       const toggleMenu = () => {
         navbarItems.forEach(element => {
@@ -306,7 +338,9 @@
         const navbarStartItems = document.querySelectorAll('.navbar-start .navbar-item')
         navbarStartItems.forEach(el => {
           el.addEventListener('click', () => {
-            toggleMenu();
+            if (isMenuVisible()) {
+              toggleMenu();
+            }
           })
         })
       })

@@ -10,11 +10,10 @@ $font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
 "Segoe UI Symbol", "Noto Color Emoji";
 $content-padding: 70px;
 $hero-padding: max($content-padding, 10vw);
-
-
 $hero-font-size: 70px;
 $hero-font-size-medium: 50px;
 $hero-font-size-small: 32px;
+$social-link-font-size: 40px;
 
 @import "node_modules/bulma/bulma.sass";
 
@@ -84,9 +83,11 @@ body > header {
 
     .navbar-brand {
         width: 0%;
-        pointer-events: none;
-        cursor: default;
-        text-decoration: none;
+        .navbar-item {
+            pointer-events: none;
+            cursor: default;
+            text-decoration: none;
+        }
     }
     .navbar-start {
         margin: 0;
@@ -200,7 +201,7 @@ section {
             a {
                 color: $primary-color;
                 i {
-                    font-size: 40px;
+                    font-size: $social-link-font-size;
                 }
         
                 &:hover {
@@ -217,6 +218,40 @@ section {
         height: 90px;
         margin: 0px auto;
         background-color: white;
+    }
+}
+
+footer {
+    height: auto;
+    min-height: 70px;
+    padding: 15px;
+    text-align: center;
+
+    .links {
+        margin: auto;
+        width: 30vw;
+        margin-bottom: 16px;
+        min-width: 300px;
+        display: none;
+        ul {
+            display: flex;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            align-items: center;
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            font-size: $social-link-font-size;
+
+            a {
+                color: $primary-color;
+
+                &:hover {
+                    color: $accent-color;
+                }
+            }
+        }
     }
 }
 
@@ -353,6 +388,20 @@ section {
     }
 }
 
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    p {
+        color: $grey-light;
+        margin-bottom: 36px;
+        max-width: 460px;
+    }
+}
+
+
 @media screen and (max-width: 1680px) {
     .social-links {
         left: 2rem;
@@ -376,6 +425,12 @@ section {
 @media screen and (max-width: 1160px) {
     .social-links {
         display: none;
+    }
+
+    footer {
+        .links {
+            display: block;
+        }
     }
 }
 
