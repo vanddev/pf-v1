@@ -1,7 +1,7 @@
 $bg-color: #11191f;
 $bg-color-light:  #1b2831;
 $navbar-background-color: $bg-color;
-$navbar-item-img-max-height: 120px;
+$navbar-item-img-max-height: 110px;
 $accent-color: #ffc86b;
 $primary-color: #eeeeee;
 $navbar-item-font-size: 20px;
@@ -113,6 +113,9 @@ body > header {
             font-size: 20px;
             &:hover {
                 color: $accent-color;
+            }
+            &[data-lg="pt"] {
+                padding: 0 22px 0 22px;
             }
         }
     }
