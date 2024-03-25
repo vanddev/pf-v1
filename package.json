@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "build": "npm install && npm install -g sass && sass --no-source-map index.scss index.css"
+    "install-deps": "npm install && npm install -g sass",
+    "local": "sass --no-source-map index.scss index.css && http-server",
+    "build": "sass --no-source-map index.scss index.css",
+    "deploy": "npm run install-deps && npm run build"
   },
   "repository": {
     "type": "git",
@@ -18,5 +21,8 @@
   "homepage": "https://github.com/vanalvesdev/pf-v1#readme",
   "dependencies": {
     "bulma": "^0.9.4"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
   }
 }
