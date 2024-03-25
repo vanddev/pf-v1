@@ -1,0 +1,54 @@
+{
+    "nav": {
+        "about": "Sobre",
+        "skills": "Habilidades",
+        "experience": "Experiencia",
+        "contact": "Contato"
+    },
+    "hero": {
+        "greetings": "Oi, eu sou o",
+        "nickname": " também conhecido como ",
+        "resume": "Eu sou um engenheiro de software backend especializado em construir aplicações na nuvem de alta qualidade, escalaveis e seguras."
+    },
+    "download_resume": "Download my resume!",
+    "aboutme": {
+        "title": "About Me",
+        "content_p1": "Hi! I'm Vand and I create tech solutions to solve problems. I always have liked technology since my childhood, at first, I wanted to be a game developer but I was delighted with the experience of solving real problems and impacting people's lives.",
+        "content_p2": "My interest started back in 2014 when I built a small game using RPG Maker and after I create a blog on WordPress, those experiences taught me a lot about web development, and since then working with technology became a dream. The next year I was at the Brazil Game Show showing the result of my job to thousands of people per day, and this experience really changed the way I see how my job affects other people and this bring to me a strong sense of responsibility with my solutions.",
+        "content_p3": "My main focus these days is building reliable solutions that can cause a good experience for clients."
+    },
+    "skills": "My Skills",
+    "experience": {
+        "title": "Experience",
+        "current": "Current",
+        "zup": {
+            "role": "Senior Software Engineer at ",
+            "content_p1": "Inovating in bank technologic with {{- links.itau}} to make people's financial lives easier through the digital bank ",
+            "content_p2": "I participated in the implementation of the instant transfer method (PIX), in the sharing of information between financial institutions through Open Banking and currently working as a data engineer contributing to building a digital identity of our clients."
+        },
+        "brisa": {
+            "role": "Senior Software Engineer at ",
+            "content_p1": "Working in a R&D environment I was able to contribute to {{- links.vivo}}'s and {{- links.claro}}'s management system of business mobile plans."
+        },
+        "capgemini": {
+            "2018": {
+                "role": "Senior Software Engineer at ",
+                "content": "I contributed with {{- links.caixa}} to create the mobile app {{- links.caixahabitacao}} to make easier for the families manager your residential financing aggrement."
+            },
+            "2015": {
+                "role": "Junior Software Engineer at ",
+                "content": "I participated in the construction of AGHU, a hospital management software used by all university hospitals in Brazil."
+            }
+        },
+        "spotblank": {
+            "role": "Software Engineer and Game Developer at ",
+            "content_p1": "Participating in the national game development scenario, I built a demo that was presented at the Brazil Game Show.",
+            "content_p2": "I also build a digital store and digital library to consume animated light novels."
+        }
+    },
+    "contact": {
+        "title": "Say a hello",
+        "content": "I'm always open to exploring new opportunities, so feel free to reach out if you have something in mind. Additionally, if you just want to connect or have a question, don't hesitate to message me. I'll do my best to get back to you as soon as possible.",
+        "call": "Send me a message"
+    }
+}
