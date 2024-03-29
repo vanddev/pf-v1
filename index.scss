@@ -1,7 +1,7 @@
 $bg-color: #11191f;
 $bg-color-light:  #1b2831;
 $navbar-background-color: $bg-color;
-$navbar-item-img-max-height: 110px;
+$navbar-item-img-max-height: 80px;
 $accent-color: #ffc86b;
 $primary-color: #eeeeee;
 $navbar-item-font-size: 20px;
@@ -13,7 +13,7 @@ $hero-padding: max($content-padding, 10vw);
 $hero-font-size: 70px;
 $hero-font-size-medium: 50px;
 $hero-font-size-small: 32px;
-$social-link-font-size: 40px;
+$social-link-font-size: 30px;
 
 @import "node_modules/bulma/bulma.sass";
 
@@ -80,7 +80,10 @@ body > header {
 
 .navbar {
     padding: $content-padding;
-
+    
+    .navbar-menu {
+        position: relative;
+    }
     .navbar-brand {
         width: 0%;
         .navbar-item {
@@ -103,21 +106,22 @@ body > header {
             &:hover {
                 color: $accent-color;
             }
-        }
-    }
-
-    .navbar-end {
-        .navbar-item {
-            background-color: transparent;
-            color: $primary-color;
-            font-size: 20px;
-            &:hover {
-                color: $accent-color;
-            }
             &[data-lg="pt"] {
                 padding: 0 22px 0 22px;
             }
         }
+
+        .navbar-links-container {
+            display: flex;
+            width: 38%;
+            justify-content: space-between;
+            padding-left: 20px;
+        }
+    }
+
+    .navbar-end {
+        position: absolute;
+        right: 0;
     }
 
     .navbar-burger {
@@ -440,7 +444,7 @@ footer {
 
 @media screen and (max-width: 1024px) {
     .navbar {
-        padding: 0px;
+        padding: 20px;
 
         .navbar-brand {
             width: 100%;
@@ -606,7 +610,7 @@ footer {
         align-items: center;
         background-color: $bg-color-light;
 
-        .navbar-start {
+        .navbar-start, .navbar-links-container {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -615,6 +619,12 @@ footer {
             height: 100%;
             width: 100%;
             padding: 70px 10px;
+        }
+
+        .navbar-end {
+            top: 0;
+            left: 0;
+            padding: 20px 0 0 20px;
         }
     }
  }

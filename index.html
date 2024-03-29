@@ -49,10 +49,18 @@
         
           <div id="navMenu" class="navbar-menu animate__animated">
             <div class="navbar-start">
-              <a href="#about" class="navbar-item">About</a>
-              <a href="#skills" class="navbar-item">Skills</a>
-              <a href="#timeline" class="navbar-item">Experience</a>
-              <a href="#contact" class="navbar-item">Contact</a>
+              <div class="navbar-links-container">
+                <a href="#about" class="navbar-item" data-i18n="nav.about">About</a>
+                <a href="#skills" class="navbar-item" data-i18n="nav.skills">Skills</a>
+                <a href="#timeline" class="navbar-item" data-i18n="nav.experience">Experience</a>
+                <a href="#contact" class="navbar-item" data-i18n="nav.contact">Contact</a>
+              </div>
+            </div>
+            <div class="navbar-end">
+              <div id="lg-button-group" class="field is-grouped">
+                <button class="button is-link is-small is-info button-lg" onclick="change_language(this)">EN</button>
+                <button class="button is-link is-small is-info is-outlined button-lg" onclick="change_language(this)" style="margin-left: 10px">PT</button>
+              </div>
             </div>
           </div>
       </nav>
@@ -94,12 +102,12 @@
         </div>
       </section>
       <section id="about" data-aos="fade-up">
-        <h1>About Me</h1>
+        <h1 data-i18n="aboutme.title">About Me</h1>
         <div class="columns">
           <div class="column is-offset-1 profile-desc">
-            <p>Hi! I'm Vand and I create tech solutions to solve problems. I always have liked technology since my childhood, at first, I wanted to be a game developer but I was delighted with the experience of solving real problems and impacting people's lives.</p>
-            <p>My interest started back in 2014 when I built a small game using RPG Maker and after I create a blog on WordPress, those experiences taught me a lot about web development, and since then working with technology became a dream. The next year I was at the Brazil Game Show showing the result of my job to thousands of people per day, and this experience really changed the way I see how my job affects other people and this bring to me a strong sense of responsibility with my solutions.</p>
-            <p>My main focus these days is building reliable solutions that can cause a good experience for clients.</p>
+            <p data-i18n="aboutme.content_p1">Hi! I'm Vand and I create tech solutions to solve problems. I always have liked technology since my childhood, at first, I wanted to be a game developer but I was delighted with the experience of solving real problems and impacting people's lives.</p>
+            <p data-i18n="aboutme.content_p2">My interest started back in 2014 when I built a small game using RPG Maker and after I create a blog on WordPress, those experiences taught me a lot about web development, and since then working with technology became a dream. The next year I was at the Brazil Game Show showing the result of my job to thousands of people per day, and this experience really changed the way I see how my job affects other people and this bring to me a strong sense of responsibility with my solutions.</p>
+            <p data-i18n="aboutme.content_p3">My main focus these days is building reliable solutions that can cause a good experience for clients.</p>
           </div>
            <div class="column is-2-widescreen is-3-desktop is-3-tablet profile-photo">
             <img alt="Vand's Brand" src="assets/profile-photo.png">
@@ -107,7 +115,7 @@
         </div>
       </section>
       <section id="skills" data-aos="fade-up">
-        <h1>My Skills</h1>
+        <h1 data-i18n="skills">My Skills</h1>
         <div class="columns is-mobile">
           <div class="column is-3">
             <div class="skill-card">
@@ -208,59 +216,59 @@
         </div>
       </section>
       <section id="timeline" data-aos="fade-up">
-        <h1>Experience</h1>
+        <h1 data-i18n="experience.title">Experience</h1>
         <div class="timeline-items">
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-date">2020</div>
             <div class="timeline-content">
-              <p class="current-tag">Current</p>
-              <h3>Senior Software Engineer at <a href="https://www.zup.com.br" target="_blank">Zup Innovation</a></h3>
-              <p>Inovating in bank technologic with <a href="https://www.itau.com.br" target="_blank">Itaú</a> to make people's financial lives easier through the digital bank <a href="https://iti.itau" target="_blank">Iti</a>.</p>
-              <p>I participated in the implementation of the instant transfer method (PIX), in the sharing of information between financial institutions through Open Banking and currently working in the credit stage.</p>
+              <p data-i18n="experience.current" class="current-tag">Current</p>
+              <h3 data-i18n="experience.zup.role">Senior Software Engineer at <a href="https://www.zup.com.br" target="_blank">Zup Innovation</a></h3>
+              <p data-i18n="experience.zup.content_p1">Inovating in bank technologic with <a href="https://www.itau.com.br" target="_blank">Itaú</a> to make people's financial lives easier through the digital bank <a href="https://iti.itau" target="_blank">Iti</a>.</p>
+              <p data-i18n="experience.zup.content_p2">I participated in the implementation of the instant transfer method (PIX), in the sharing of information between financial institutions through Open Banking and currently working in the credit stage.</p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-date">2019</div>
             <div class="timeline-content">
-              <h3>Senior Software Engineer at <a href="http://www.brisa.org.br" target="_blank">Brisa</a></h3>
-              <p>Working in a R&D environment I was able to contribute to <a href="https://www.vivo.com.br"  target="_blank">Vivo's</a> and <a href="https://www.claro.com.br"  target="_blank">Claro's</a> management system of business mobile plans.</p>
+              <h3 data-i18n="experience.brisa.role">Senior Software Engineer at <a href="http://www.brisa.org.br" target="_blank">Brisa</a></h3>
+              <p data-i18n="experience.brisa.content_p1">Working in a R&D environment I was able to contribute to <a href="https://www.vivo.com.br"  target="_blank">Vivo's</a> and <a href="https://www.claro.com.br"  target="_blank">Claro's</a> management system of business mobile plans.</p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-date">2018</div>
             <div class="timeline-content">
-              <h3>Software Engineer at <a href="https://www.capgemini.com/br-pt/" target="_blank">Capgemini</a></h3>
-              <p>I contributed with <a href="https://www.caixa.gov.br/" target="_blank">Caixa</a> to create the mobile app <a href="https://www.habitacaodigital.caixa.gov.br/acesso-cliente" target="_blank">Caixa Habitacao</a> to make easier for the families manager your home loan aggrement </p>
+              <h3 data-i18n="experience.capgemini.2018.role">Software Engineer at <a href="https://www.capgemini.com/br-pt/" target="_blank">Capgemini</a></h3>
+              <p data-i18n="experience.capgemini.2018.content">I contributed with <a href="https://www.caixa.gov.br/" target="_blank">Caixa</a> to create the mobile app <a href="https://www.habitacaodigital.caixa.gov.br/acesso-cliente" target="_blank">Caixa Habitacao</a> to make easier for the families manager your home loan aggrement </p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-date">2016</div>
             <div class="timeline-content">
-              <h3>Software Engineer and Game Developer at <a href="https://www.facebook.com/thespotblank" target="_blank">Spotblank - Requiem Studios</a></h3>
-              <p>Participating in the national game development scenario, I built a demo that was presented at the Brazil Game Show.</p>
-              <p>I also build a digital store and digital library to consume animated light novels</p>
+              <h3 data-i18n="experience.spotblank.role">Software Engineer and Game Developer at <a href="https://www.facebook.com/thespotblank" target="_blank">Spotblank - Requiem Studios</a></h3>
+              <p data-i18n="experience.spotblank.content_p1">Participating in the national game development scenario, I built a demo that was presented at the Brazil Game Show.</p>
+              <p data-i18n="experience.spotblank.content_p2">I also build a digital store and digital library to consume animated light novels</p>
             </div>
           </div>
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-date">2015</div>
             <div class="timeline-content">
-              <h3>Junior Software Engineer at <a href="https://www.capgemini.com/br-pt/" target="_blank">Capgemini</a></h3>
-              <p>I participated in the construction of AGHU, a hospital management software used by all university hospitals in Brazil</p>
+              <h3 data-i18n="experience.capgemini.2015.role">Junior Software Engineer at <a href="https://www.capgemini.com/br-pt/" target="_blank">Capgemini</a></h3>
+              <p data-i18n="experience.capgemini.2015.content">I participated in the construction of AGHU, a hospital management software used by all university hospitals in Brazil</p>
             </div>
           </div>
         </div>
       </section>
       <section id="contact" data-aos="fade-up">
-        <h1>Say a hello</h1>
-        <p>I'm always open to exploring new opportunities, so feel free to reach out if you have something in mind. Additionally, if you just want to connect or have a question, don't hesitate to message me. I'll do my best to get back to you as soon as possible.</p>
+        <h1 data-i18n="contact.title">Say a hello</h1>
+        <p data-i18n="contact.content">I'm always open to exploring new opportunities, so feel free to reach out if you have something in mind. Additionally, if you just want to connect or have a question, don't hesitate to message me. I'll do my best to get back to you as soon as possible.</p>
         <div class="buttons">
           <a class="button is-info is-outlined" rel="noopener noreferrer" target="_blank" href="mailto:vanalvesdev@gmail.com">
-            <strong>Send me a message</strong>
+            <strong data-i18n="contact.call">Send me a message</strong>
           </a>
         </div>
       </section>
@@ -317,8 +325,18 @@
             .then((t) => translate_content(t));
       }
       
-      function change_language(language) {
-        i18next.changeLanguage(language.toLowerCase()).then((t) => translate_content(t))
+      function change_language(element) {
+        i18next.changeLanguage(element.textContent.toLowerCase()).then((t) => translate_content(t))
+        clean_language_buttons()
+        active_language_button(element)
+      }
+
+      function clean_language_buttons() {
+        document.querySelectorAll('.button-lg').forEach(element => console.log(element.classList.add('is-outlined')))
+      }
+
+      function active_language_button(element) {
+        element.classList.remove('is-outlined')
       }
       
       translate_config()

@@ -7,7 +7,7 @@
     },
     "hero": {
         "greetings": "Hi, I'm",
-        "nickname": " also known as ",
+        "nickname": " also known as <strong>Vand</strong>",
         "resume": "I'm a backend software engineer specializing in building high-quality, scalable, and secure application solutions in the cloud."
     },
     "download_resume": "Download my resume!",

@@ -7,48 +7,48 @@
     },
     "hero": {
         "greetings": "Oi, eu sou o",
-        "nickname": " também conhecido como ",
+        "nickname": " também conhecido como <strong>Vand</strong>",
         "resume": "Eu sou um engenheiro de software backend especializado em construir aplicações na nuvem de alta qualidade, escalaveis e seguras."
     },
-    "download_resume": "Download my resume!",
+    "download_resume": "Baixe meu CV!",
     "aboutme": {
-        "title": "About Me",
-        "content_p1": "Hi! I'm Vand and I create tech solutions to solve problems. I always have liked technology since my childhood, at first, I wanted to be a game developer but I was delighted with the experience of solving real problems and impacting people's lives.",
-        "content_p2": "My interest started back in 2014 when I built a small game using RPG Maker and after I create a blog on WordPress, those experiences taught me a lot about web development, and since then working with technology became a dream. The next year I was at the Brazil Game Show showing the result of my job to thousands of people per day, and this experience really changed the way I see how my job affects other people and this bring to me a strong sense of responsibility with my solutions.",
-        "content_p3": "My main focus these days is building reliable solutions that can cause a good experience for clients."
+        "title": "Sobre mim",
+        "content_p1": "Oi! Eu sou o Vand e eu crio soluções tech para resolver problemas reais. Eu sempre gostei de tecnologia desde a infância, de início, eu queria ser desenvolvedor de jogos, mas eu fiquei encantado com a experiência de resolver problemas reais e impactar a vida das pessoas.",
+        "content_p2": "Meu interesse começou em 2014 quando eu construí um jogo usando RPG Maker e após isso eu criei um blog em WordPress, essas experiencias me ensinaram muito sobre tecnologia e desenvolvimento web, e desde então trabalhar com tecnologia se tornou um sonho. No ano seguinte eu estava na BGS (Brazil Game Show) mostrando o resultado do meu trabalho para milhares de pessoas diariamente, e essa experiencia mudou a minha forma de ver como o meu trabalho poderia afetar as pessoas, o que me trouxe um senso de responsabilidade forte com as minhas soluções.",
+        "content_p3": "Meu principal objetivo é construir soluções confiáveis que possam causar boas experiencias para os meus clientes."
     },
-    "skills": "My Skills",
+    "skills": "Minhas Habilidades",
     "experience": {
-        "title": "Experience",
-        "current": "Current",
+        "title": "Experiência",
+        "current": "Atual",
         "zup": {
-            "role": "Senior Software Engineer at ",
-            "content_p1": "Inovating in bank technologic with {{- links.itau}} to make people's financial lives easier through the digital bank ",
-            "content_p2": "I participated in the implementation of the instant transfer method (PIX), in the sharing of information between financial institutions through Open Banking and currently working as a data engineer contributing to building a digital identity of our clients."
+            "role": "Engenheiro de Software Senior na {{- links.zup}}",
+            "content_p1": "Inovando em tecnologia bancaria com {{- links.itau}} para fazer facilitar a vida financeira das pessoas através do banco digital {{- links.iti}} ",
+            "content_p2": "Eu participei da implementação do método de transferência instantânea (PIX), no compartilhamento de informações entre instituições financeiras com Open Banking e atualmente como engenheiro de dados eu contribuo na construção da identidade digital dos nossos clientes."
         },
         "brisa": {
-            "role": "Senior Software Engineer at ",
-            "content_p1": "Working in a R&D environment I was able to contribute to {{- links.vivo}}'s and {{- links.claro}}'s management system of business mobile plans."
+            "role": "Engenheiro de Software Senior na {{- links.brisa}}",
+            "content_p1": "Trabalhando no ambiente de P&D eu fui capaz de contribuir com o sistema de gerenciamento de planos mobile empresarias da {{- links.vivo}}'s e {{- links.claro}}."
         },
         "capgemini": {
             "2018": {
-                "role": "Senior Software Engineer at ",
-                "content": "I contributed with {{- links.caixa}} to create the mobile app {{- links.caixahabitacao}} to make easier for the families manager your residential financing aggrement."
+                "role": "Engenheiro de Software Senior na {{- links.capgemini}}",
+                "content": "Eu contribui com a {{- links.caixa}} para criar o app {{- links.caixahabitacao}} para facilitar para as familias gerenciarem seus contratos de financiamento residencial."
             },
             "2015": {
-                "role": "Junior Software Engineer at ",
-                "content": "I participated in the construction of AGHU, a hospital management software used by all university hospitals in Brazil."
+                "role": "Engenheiro de Software Junior {{- links.capgemini}}",
+                "content": "Eu participei da construção do AGHU, um software de gerenciamento hospitalar usado por todos os hospitais universitarios do Brasil."
             }
         },
         "spotblank": {
-            "role": "Software Engineer and Game Developer at ",
-            "content_p1": "Participating in the national game development scenario, I built a demo that was presented at the Brazil Game Show.",
-            "content_p2": "I also build a digital store and digital library to consume animated light novels."
+            "role": "Engenheiro de Software e Desenvolvedor de Jogos no {{- links.spotblank}}",
+            "content_p1": "Participei do cenário nacional de desenvolvimento de jogos, eu construi uma demo que foi apresentada no Brasil Game Show.",
+            "content_p2": "Eu também construi uma loja digital e uma biblioteca digital para o consumo de light novels animadas."
         }
     },
     "contact": {
-        "title": "Say a hello",
-        "content": "I'm always open to exploring new opportunities, so feel free to reach out if you have something in mind. Additionally, if you just want to connect or have a question, don't hesitate to message me. I'll do my best to get back to you as soon as possible.",
-        "call": "Send me a message"
+        "title": "Manda um Oi",
+        "content": "Eu estou sempre aberto para explorar novas oportunidades, sinta se livre para falar comigo caso tenha alguma boa oportunidade. Caso queira apenas conversar ou fazer uma pergunta, não hesite em me chamar. Eu farei o meu melhor para te responder o mais rapido possivel.",
+        "call": "Me manda uma mensagem"
     }
 }
