@@ -8,6 +8,7 @@
     "hero": {
         "greetings": "Oi, eu sou o",
         "nickname": " também conhecido como <strong>Vand</strong>",
+        "catchphrase": "Eu melhoro vidas através da tecnologia",
         "resume": "Eu sou um engenheiro de software backend especializado em construir aplicações na nuvem de alta qualidade, escalaveis e seguras."
     },
     "download_resume": "Baixe meu CV!",

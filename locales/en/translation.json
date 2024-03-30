@@ -8,6 +8,7 @@
     "hero": {
         "greetings": "Hi, I'm",
         "nickname": " also known as <strong>Vand</strong>",
+        "catchphrase": "I improve lives with technology",
         "resume": "I'm a backend software engineer specializing in building high-quality, scalable, and secure application solutions in the cloud."
     },
     "download_resume": "Download my resume!",
@@ -22,26 +23,26 @@
         "title": "Experience",
         "current": "Current",
         "zup": {
-            "role": "Senior Software Engineer at ",
+            "role": "Senior Software Engineer at {{- links.zup}}",
             "content_p1": "Inovating in bank technologic with {{- links.itau}} to make people's financial lives easier through the digital bank ",
             "content_p2": "I participated in the implementation of the instant transfer method (PIX), in the sharing of information between financial institutions through Open Banking and currently working as a data engineer contributing to building a digital identity of our clients."
         },
         "brisa": {
-            "role": "Senior Software Engineer at ",
+            "role": "Senior Software Engineer at {{- links.brisa}}",
             "content_p1": "Working in a R&D environment I was able to contribute to {{- links.vivo}}'s and {{- links.claro}}'s management system of business mobile plans."
         },
         "capgemini": {
             "2018": {
-                "role": "Senior Software Engineer at ",
+                "role": "Senior Software Engineer at {{- links.capgemini}}",
                 "content": "I contributed with {{- links.caixa}} to create the mobile app {{- links.caixahabitacao}} to make easier for the families manager your residential financing aggrement."
             },
             "2015": {
-                "role": "Junior Software Engineer at ",
+                "role": "Junior Software Engineer at {{- links.capgemini}}",
                 "content": "I participated in the construction of AGHU, a hospital management software used by all university hospitals in Brazil."
             }
         },
         "spotblank": {
-            "role": "Software Engineer and Game Developer at ",
+            "role": "Software Engineer and Game Developer at {{- links.spotblank}}",
             "content_p1": "Participating in the national game development scenario, I built a demo that was presented at the Brazil Game Show.",
             "content_p2": "I also build a digital store and digital library to consume animated light novels."
         }

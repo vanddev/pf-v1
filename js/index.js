@@ -3,6 +3,14 @@ const navbarBurger = {}
 const mainContent = document.getElementsByTagName('main')[0]
 const htmlDocument = document.getElementsByTagName('html')[0]
 
+const clean_language_buttons = () => {
+    document.querySelectorAll('.button-lg').forEach(element => console.log(element.classList.add('is-outlined')))
+}
+
+const active_language_button = (element) => {
+    element.classList.remove('is-outlined')
+}
+
 const isMenuVisible = () => {
     return window.getComputedStyle(document.querySelector(".navbar-burger")).display != 'none'
 }

@@ -86,12 +86,6 @@
         <h1 data-i18n="hero.greetings">Hi, I'm</h1>
         <h2><strong>Vanderson Alves</strong></h2>
         <h3 data-i18n="hero.nickname"> also known as <strong>Vand</strong></h3>
-        <div id="typed-strings-en" class="catchphrase" style="display: none;">
-          <span>I improve lives with technology</span>
-        </div>
-        <div id="typed-strings-pt" class="catchphrase" style="display: none;">
-          <span>Eu melhoro vidas através da tecnologia</span>
-        </div>
         <span id="typed" class="catchphrase"></span>
         <p data-i18n="hero.resume">I'm a backend software engineer specializing in building high-quality, scalable, and secure application solutions in the cloud.</p>
         
@@ -267,7 +261,7 @@
         <h1 data-i18n="contact.title">Say a hello</h1>
         <p data-i18n="contact.content">I'm always open to exploring new opportunities, so feel free to reach out if you have something in mind. Additionally, if you just want to connect or have a question, don't hesitate to message me. I'll do my best to get back to you as soon as possible.</p>
         <div class="buttons">
-          <a class="button is-info is-outlined" rel="noopener noreferrer" target="_blank" href="mailto:vanalvesdev@gmail.com">
+          <a class="button is-info is-outlined" rel="noopener noreferrer" target="_blank" href="mailto:contact@vand.dev">
             <strong data-i18n="contact.call">Send me a message</strong>
           </a>
         </div>
@@ -292,68 +286,8 @@
       </div>
       <span>Built by Vand Alves</span>
     </footer>
-    <script>
-      function translate_content(t) {
-        fetch("locales/links.json")
-          .then(response => response.json())
-          .then(links => {
-            let i18nList = document.querySelectorAll('[data-i18n]');
-            i18nList.forEach(element => {
-                let translated_text = t(element.dataset.i18n, {links});
-                element.innerHTML = translated_text;
-                element.dataset.lg = i18next.language
-            });
-            startTyped()
-          })
-      }
-
-      function translate_config() {
-          i18next
-            .use(i18nextHttpBackend)
-            .init({
-                lang: 'en',
-                debug: false,
-                fallbackLng: 'en',
-                load:'unspecific',
-                ns: ['translation'],
-                defaultNs: 'translation',
-                backend: {
-                    loadPath: '/locales/{{lng}}/{{ns}}.json',
-                    cache: false
-                }
-            })
-            .then((t) => translate_content(t));
-      }
-      
-      function change_language(element) {
-        i18next.changeLanguage(element.textContent.toLowerCase()).then((t) => translate_content(t))
-        clean_language_buttons()
-        active_language_button(element)
-      }
-
-      function clean_language_buttons() {
-        document.querySelectorAll('.button-lg').forEach(element => console.log(element.classList.add('is-outlined')))
-      }
-
-      function active_language_button(element) {
-        element.classList.remove('is-outlined')
-      }
-      
-      translate_config()
-    </script>
-    <script>
-      function startTyped() {
-        lg = i18next.language
-        if (typeof currentTyped !== 'undefined') {
-          currentTyped.destroy()
-        }
-        currentTyped = new Typed('#typed', {
-          stringsElement: `#typed-strings-${lg ? lg : 'en'}`,
-          typeSpeed: 70,
-          showCursor: false
-        });
-      }
-    </script>
+    <script src="js/translate.js"></script>
+    <script src="js/configTyped.js"></script>
     <script>
       AOS.init({once: true});
     </script>
