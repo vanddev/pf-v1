@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="assets/favicon_v2.png" type="image/png">
+    <!-- Primary Meta Tags -->
+    <title>Vand Alves - Software Engineer</title>
+    <meta name="title" content="Vand Alves - Software Engineer">
+    <meta name="description" content="Backend Software Engineer passionate about improving lives with technology">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vand.netlify.app/">
+    <meta property="og:title" content="Vand Alves - Software Engineer">
+    <meta property="og:description" content="Backend Software Engineer passionate about improving lives with technology">
+    <meta property="og:image" content="https://vand.netlify.app/assets/logo_bg.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://vand.netlify.app/">
+    <meta property="twitter:title" content="Vand Alves - Software Engineer">
+    <meta property="twitter:description" content="Backend Software Engineer passionate about improving lives with technology">
+    <meta property="twitter:image" content="https://vand.netlify.app/assets/logo_bg.png">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/i18next/i18next.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img class="navbar-item" src="assets/brand_v2.png" alt="Vand's Brand">
+            </a>
+        
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+        
+          <div id="navMenu" class="navbar-menu animate__animated">
+            <div class="navbar-start">
+              <div class="navbar-links-container">
+                <a href="#about" class="navbar-item" data-i18n="nav.about">About</a>
+                <a href="#skills" class="navbar-item" data-i18n="nav.skills">Skills</a>
+                <a href="#timeline" class="navbar-item" data-i18n="nav.experience">Experience</a>
+                <a href="#contact" class="navbar-item" data-i18n="nav.contact">Contact</a>
+              </div>
+            </div>
+            <div class="navbar-end">
+              <div id="lg-button-group" class="field is-grouped">
+                <button class="button is-link is-small is-info button-lg" onclick="change_language(this)">EN</button>
+                <button class="button is-link is-small is-info is-outlined button-lg" onclick="change_language(this)" style="margin-left: 10px">PT</button>
+              </div>
+            </div>
+          </div>
+      </nav>
+      <aside class="social-links">
+        <ul>
+          <li>
+            <a data-tooltip="Github" data-placement="right" target="_blank" href="https://github.com/vanalvesdev"><i class="lab la-github"></i></a>
+          </li>
+          <li>
+            <a data-tooltip="Linkedin" data-placement="right" target="_blank" href="https://www.linkedin.com/in/vaanalvesr/?locale=en_US"><i class="lab la-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a data-tooltip="Stackoverflow" data-placement="right" target="_blank" href="https://stackoverflow.com/users/8420463/vanderson-alves"><i class="lab la-stack-overflow"></i></a>
+          </li>
+          <li>
+            <a data-tooltip="Medium" data-placement="right" target="_blank" href="https://medium.com/@vaanalvesdev"><i class="lab la-medium"></i></a>
+          </li>
+        </ul>
+      </aside>
+    </header>
+    <main class="container">
+      <section id="main-hero">
+        <h1 data-i18n="hero.greetings">Hi, I'm</h1>
+        <h2><strong>Vanderson Alves</strong></h2>
+        <h3 data-i18n="hero.nickname"> also known as <strong>Vand</strong></h3>
+        <span id="typed" class="catchphrase"></span>
+        <p data-i18n="hero.resume">I'm a backend software engineer specializing in building high-quality, scalable, and secure application solutions in the cloud.</p>
+        
+        <div class="buttons">
+          <a class="button is-info is-outlined" rel="noopener noreferrer" target="_blank" href="assets/resume.pdf">
+            <strong data-i18n="download_resume">Download my resume!</strong>
+          </a>
+        </div>
+      </section>
+      <section id="about" data-aos="fade-up">
+        <h1 data-i18n="aboutme.title">About Me</h1>
+        <div class="columns">
+          <div class="column is-offset-1 profile-desc">
+            <p data-i18n="aboutme.content_p1">Hi! I'm Vand and I create tech solutions to solve problems. I always have liked technology since my childhood, at first, I wanted to be a game developer but I was delighted with the experience of solving real problems and impacting people's lives.</p>
+            <p data-i18n="aboutme.content_p2">My interest started back in 2014 when I built a small game using RPG Maker and after I create a blog on WordPress, those experiences taught me a lot about web development, and since then working with technology became a dream. The next year I was at the Brazil Game Show showing the result of my job to thousands of people per day, and this experience really changed the way I see how my job affects other people and this bring to me a strong sense of responsibility with my solutions.</p>
+            <p data-i18n="aboutme.content_p3">My main focus these days is building reliable solutions that can cause a good experience for clients.</p>
+          </div>
+           <div class="column is-2-widescreen is-3-desktop is-3-tablet profile-photo">
+            <img alt="Vand's Brand" src="assets/profile-photo.png">
+          </div>
+        </div>
+      </section>
+      <section id="skills" data-aos="fade-up">
+        <h1 data-i18n="skills">My Skills</h1>
+        <div class="columns is-mobile">
+          <div class="column is-3">
+            <div class="skill-card">
+              <img alt="Vand's Brand" src="assets/icons8-java.svg">
+              <div class="skill-title">Java</div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="skill-card">
+              <img alt="Vand's Brand" src="assets/icons8-kotlin.svg">
+              <div class="skill-title">Kotlin</div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="skill-card">
+              <img alt="Vand's Brand" src="assets/icons8-python.svg">
+              <div class="skill-title">Python</div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="skill-card">
+              <img alt="Vand's Brand" src="assets/icons8-javascript.svg">
+              <div class="skill-title">Javascript</div>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-mobile">
+          <div class="column is-3">
+            <div class="skill-card">
+              <img alt="Spring's logo" src="assets/icons8-spring-boot.svg">
+              <div class="skill-title">Spring</div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="skill-card">
+              <img alt="Vand's Brand" src="assets/icons8-node-js.svg">
+              <div class="skill-title">Node</div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="skill-card">
+              <img alt="Vand's Brand" src="assets/icons8-react-480.png">
+              <div class="skill-title">React</div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="skill-card">
+              <img alt="Vand's Brand" src="assets/icons8-vue-js.svg">
+              <div class="skill-title">VueJs</div>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-mobile">
+          <div class="column is-3 is-offset-1_5 is-hidden-touch">
+            <div class="skill-card">
+              <img alt="Vand's Brand" src="assets/icons8-redis.svg">
+              <div class="skill-title">Redis</div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="skill-card">
+              <img alt="Vand's Brand" src="assets/mysql-6.svg">
+              <div class="skill-title">MySQL</div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="skill-card">
+              <img alt="Vand's Brand" src="assets/postgresql.svg">
+              <div class="skill-title">Postgres</div>
+            </div>
+          </div>
+          <div class="column is-3 is-hidden-desktop">
+            <div class="skill-card">
+              <img alt="Vand's Brand" src="assets/kafka.svg">
+              <div class="skill-title">Kafka</div>
+            </div>
+          </div>
+          <div class="column is-3 is-hidden-desktop">
+            <div class="skill-card">
+              <img alt="Vand's Brand" src="assets/aws-logo.svg">
+              <div class="skill-title">AWS</div>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-mobile is-hidden-touch">
+          <div class="column is-3 is-offset-3">
+            <div class="skill-card">
+              <img alt="Vand's Brand" src="assets/kafka.svg">
+              <div class="skill-title">Kafka</div>
+            </div>
+          </div>
+          <div class="column is-3">
+            <div class="skill-card">
+              <img alt="Vand's Brand" src="assets/aws-logo.svg">
+              <div class="skill-title">AWS</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="timeline" data-aos="fade-up">
+        <h1 data-i18n="experience.title">Experience</h1>
+        <div class="timeline-items">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2020</div>
+            <div class="timeline-content">
+              <p data-i18n="experience.current" class="current-tag">Current</p>
+              <h3 data-i18n="experience.zup.role">Senior Software Engineer at <a href="https://www.zup.com.br" target="_blank">Zup Innovation</a></h3>
+              <p data-i18n="experience.zup.content_p1">Inovating in bank technologic with <a href="https://www.itau.com.br" target="_blank">Itaú</a> to make people's financial lives easier through the digital bank <a href="https://iti.itau" target="_blank">Iti</a>.</p>
+              <p data-i18n="experience.zup.content_p2">I participated in the implementation of the instant transfer method (PIX), in the sharing of information between financial institutions through Open Banking and currently working in the credit stage.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2019</div>
+            <div class="timeline-content">
+              <h3 data-i18n="experience.brisa.role">Senior Software Engineer at <a href="http://www.brisa.org.br" target="_blank">Brisa</a></h3>
+              <p data-i18n="experience.brisa.content_p1">Working in a R&D environment I was able to contribute to <a href="https://www.vivo.com.br"  target="_blank">Vivo's</a> and <a href="https://www.claro.com.br"  target="_blank">Claro's</a> management system of business mobile plans.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2018</div>
+            <div class="timeline-content">
+              <h3 data-i18n="experience.capgemini.2018.role">Software Engineer at <a href="https://www.capgemini.com/br-pt/" target="_blank">Capgemini</a></h3>
+              <p data-i18n="experience.capgemini.2018.content">I contributed with <a href="https://www.caixa.gov.br/" target="_blank">Caixa</a> to create the mobile app <a href="https://www.habitacaodigital.caixa.gov.br/acesso-cliente" target="_blank">Caixa Habitacao</a> to make easier for the families manager your home loan aggrement </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2016</div>
+            <div class="timeline-content">
+              <h3 data-i18n="experience.spotblank.role">Software Engineer and Game Developer at <a href="https://www.facebook.com/thespotblank" target="_blank">Spotblank - Requiem Studios</a></h3>
+              <p data-i18n="experience.spotblank.content_p1">Participating in the national game development scenario, I built a demo that was presented at the Brazil Game Show.</p>
+              <p data-i18n="experience.spotblank.content_p2">I also build a digital store and digital library to consume animated light novels</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2015</div>
+            <div class="timeline-content">
+              <h3 data-i18n="experience.capgemini.2015.role">Junior Software Engineer at <a href="https://www.capgemini.com/br-pt/" target="_blank">Capgemini</a></h3>
+              <p data-i18n="experience.capgemini.2015.content">I participated in the construction of AGHU, a hospital management software used by all university hospitals in Brazil</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" data-aos="fade-up">
+        <h1 data-i18n="contact.title">Say a hello</h1>
+        <p data-i18n="contact.content">I'm always open to exploring new opportunities, so feel free to reach out if you have something in mind. Additionally, if you just want to connect or have a question, don't hesitate to message me. I'll do my best to get back to you as soon as possible.</p>
+        <div class="buttons">
+          <a class="button is-info is-outlined" rel="noopener noreferrer" target="_blank" href="mailto:contact@vand.dev">
+            <strong data-i18n="contact.call">Send me a message</strong>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="links">
+        <ul>
+          <li>
+            <a data-tooltip="Github" data-placement="right" target="_blank" href="https://github.com/vanalvesdev"><i class="lab la-github"></i></a>
+          </li>
+          <li>
+            <a data-tooltip="Linkedin" data-placement="right" target="_blank" href="https://www.linkedin.com/in/vanddev/"><i class="lab la-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a data-tooltip="Stackoverflow" data-placement="right" target="_blank" href="https://stackoverflow.com/users/8420463/vanderson-alves"><i class="lab la-stack-overflow"></i></a>
+          </li>
+          <li>
+            <a data-tooltip="Medium" data-placement="right" target="_blank" href="https://medium.com/@vaanalvesdev"><i class="lab la-medium"></i></a>
+          </li>
+        </ul>
+      </div>
+      <span>Built by Vand Alves</span>
+    </footer>
+    <script src="js/translate.js"></script>
+    <script src="js/configTyped.js"></script>
+    <script>
+      AOS.init({once: true});
+    </script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
